@@ -1,0 +1,221 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.haut {
+  background-image: url(../res/haut.png);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.hautgauche {
+  margin-left: 120px;
+  margin-bottom: 110px;
+}
+
+.corps-page{
+  background-color:#e4f5ff ;
+  margin-bottom: 150px;
+}
+
+
+#sami {
+  font-family: "Times New Roman", Times, serif;
+font-size: 30px;
+letter-spacing: 5.4px;
+word-spacing: 6px;
+color: #ffffff;
+font-weight: normal;
+text-decoration: none;
+font-style: italic;
+font-variant: normal;
+text-transform: none;
+}
+#financier {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 40px;
+  letter-spacing: 5.8px;
+  word-spacing: 6px;
+  color: #000000;
+  font-weight: 400;
+  text-decoration: none;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: capitalize;
+  margin-top: 150px;
+  margin-left: 150px;
+}
+
+
+#barrefix {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(49, 49, 49);
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+#barrefix li {
+  float: left;
+}
+
+#barrefix li a {
+  display: block;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+#barrefix li a:hover {
+  background-color: #111;
+}
+
+.active {
+  background-color: #4caf50;
+}
+
+.information {
+  margin-bottom: 50px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.7fr 1.3fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "titre-information"
+    "texte-information";
+}
+.titre-information {
+  grid-area: titre-information;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 31px;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+  color: #0072ff;
+  font-weight: normal;
+  text-decoration: none;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: none;
+  text-align: center;
+  margin-top: 250px;
+}
+.texte-information {
+  grid-area: texte-information;
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  column-count: 2;
+  -webkit-column-gap: 50px;
+  -moz-column-gap: 50px;
+  column-gap: 50px;
+  -webkit-column-rule: 1px solid rgba(28, 110, 164, 0.81);
+  -moz-column-rule: 1px solid rgba(28, 110, 164, 0.81);
+  column-rule: 1px solid rgba(28, 110, 164, 0.81);
+  margin-left: 200px;
+  margin-right: 200px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+  letter-spacing: 2.6px;
+  word-spacing: 2.6px;
+  color: #000000;
+  font-weight: normal;
+  text-decoration: none;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: none;
+}
+.grille{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 33px;
+  grid-template-areas:
+    "expérience compétances formation";
+  margin-left: 20px;
+  margin-right: 20px;
+  font-family: "Times New Roman", Times, serif;
+font-size: 15px;
+letter-spacing: 1.6px;
+word-spacing: 2.6px;
+color: #ffffff;
+font-weight: normal;
+text-decoration: none;
+font-style: normal;
+font-variant: normal;
+text-transform: none;
+}
+.expérience { 
+  grid-area: expérience;
+  background-color: #0c7b91;
+}
+.compétances {
+   grid-area: compétances;
+   background-color: #253f96;
+}
+.formation { 
+  grid-area: formation; 
+  background-color: #2a2c35;
+}
+.expérience, .compétances, .formation{
+  border: 5px double rgba(255, 255, 255, 0.2);
+  border-radius: 40px;
+  padding: 25px;
+}
+
+.contact{
+  margin-left: 150px;
+  margin-bottom: 80px;
+  
+}
+.titre-contact{
+  font-family: "Times New Roman", Times, serif;
+font-size: 40px;
+letter-spacing: 6px;
+word-spacing: 6px;
+color: #000000;
+font-weight: normal;
+text-decoration: none;
+font-style: italic;
+font-variant: normal;
+text-transform: uppercase;
+margin-bottom: 45px;
+}
+.texte-contact{
+  font-family: "Times New Roman", Times, serif;
+font-size: 20px;
+letter-spacing: 6px;
+word-spacing: 6px;
+color: #000000;
+font-weight: normal;
+text-decoration: none;
+font-style: italic;
+font-variant: normal;
+text-transform: none;
+line-height: 2.8;
+}
+.img-contact{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-left: 150px;
+  margin-right: 150px;
+}
+.bouton{
+  display: flex;
+  justify-content: flex-end;
+}
+.titre{
+  font-size: x-large;
+  text-shadow: 1px 0px 1px #CCCCCC, 0px 1px 1px #EEEEEE, 2px 1px 1px #CCCCCC, 1px 2px 1px #EEEEEE, 3px 2px 1px #CCCCCC, 2px 3px 1px #EEEEEE, 4px 3px 1px #CCCCCC, 3px 4px 1px #EEEEEE, 5px 4px 1px #CCCCCC, 4px 5px 1px #EEEEEE, 6px 5px 1px #CCCCCC, 5px 6px 1px #EEEEEE, 7px 6px 1px #CCCCCC, 0px 1px 2px rgba(9,32,206,0.56);
+color: #444444;
+background: #FFFFFF;
+}
+
